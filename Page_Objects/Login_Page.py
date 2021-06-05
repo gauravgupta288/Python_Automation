@@ -1,10 +1,13 @@
-class Login_Page:
+from Page_Objects import Base_Page
+from Page_Objects.Base_Page import Base
+
+
+class LoginPage(Base):
     tb_email_id = "Email"
     tb_password_id = "Password"
     btn_login_xpath = "//button[@type='submit']"
-    def __init__(self,driver):
-        self.driver = driver
-    def Login(self,username,password):
+
+    def login(self,username,password):
         self.driver.find_element_by_id(self.tb_email_id).clear()
         self.driver.find_element_by_id(self.tb_email_id).submit(username)
         self.driver.find_element_by_id(self.tb_password_id).clear()
