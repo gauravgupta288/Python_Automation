@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Elements>
+    <Element name="tb_email_id">
+    <param type="id" value="Email"/>
+    </Element>
+    <Element name="tb_password_id">
+    <param type="id" value="Password"/>
+    </Element>
+    <Element name="btn_login_xpath">
+    <param type="xpath" value="//button[@type='submit']"/>
+    </Element>
+    <Element name="tb_password_id">
+    <param type="id" value="Password"/>
+    </Element>
+</Elements>

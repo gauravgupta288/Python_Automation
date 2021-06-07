@@ -4,4 +4,5 @@ import pytest
 
 @pytest.fixture()
 def setup():
-    return webdriver.chrome()
+    driver = webdriver.chrome("Drivers/chromedriver")
+    return driver
