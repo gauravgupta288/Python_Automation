@@ -1,12 +1,11 @@
 from xml.dom import minidom
 
-class XMLParse:
 
-    @classmethod
-    def parseXML(self, filename):
-        print(filename)
+class XMLParse:
+    # This method will create dictionary of elements used in xpath
+    @staticmethod
+    def parseXML(filename):
         filename = 'Object_Repository/'+filename
-        print(filename)
         xmlDoc = minidom.parse(filename)
         xmlDoc = xmlDoc.getElementsByTagName('Element')
         elementsDict = {}

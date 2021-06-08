@@ -19,24 +19,21 @@ for s in xmlDoc:
 print(elementsDict)
 
 newsitems = []
-root = tree.getroot()
-# iterate news items
-for item in root.findall('Element/param'):
-
-    # empty news dictionary
-    news = {}
-
-    # iterate child elements of item
-    for type_tag in item:
-        value = type_tag.get('param')
-
-    # append news dictionary to news items list
-    newsitems.append(news)
-
-def new_fun(n):
-    yield 1
-    yield 100
 
 
-print(new_fun(1))
+def IsLeapYear(year):
+    if (year%100 != 0 and year%4 == 0) or year%400 == 0:
+        return True
+    else:
+        return False
 
+
+def ChangeStringCase(str):
+    for i in str:
+        print(chr(i))
+        if ascii(i) >=65 and ascii(i) <=95:
+            print(chr(ascii(65+26)))
+
+
+ChangeStringCase('wwW.aFourTecH.Com')
+print(IsLeapYear(1904))

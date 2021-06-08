@@ -9,7 +9,6 @@ class LoginPage(Base):
     driver = webdriver.Chrome(executable_path="Drivers/chromedriver")
     elementsDict = xmlParser.XMLParse.parseXML('LoginPage.xml')
 
-
     def login(self,username,password):
         self.driver.get(self.url)
         self.driver.find_element_by_id(self.elementsDict['tb_email_id']).clear()

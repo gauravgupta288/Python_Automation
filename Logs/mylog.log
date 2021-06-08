@@ -200,3 +200,51 @@
 2021-06-07 19:51:18,094 - urllib3.util.retry - DEBUG - Incremented Retry for (url='/session/a0d52f898cf19f477118b7378b45e1ee/title'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
 2021-06-07 19:51:18,094 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c7c760>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/a0d52f898cf19f477118b7378b45e1ee/title
 2021-06-07 19:51:18,094 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (4): 127.0.0.1:49719
+2021-06-07 20:02:46,120 - root - DEBUG - Login test started
+2021-06-07 20:02:46,126 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://127.0.0.1:49878/session/54f142c8955263b6052d11a87a82f37e/url {"url": "https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F"}
+2021-06-07 20:02:49,387 - urllib3.connectionpool - DEBUG - http://127.0.0.1:49878 "POST /session/54f142c8955263b6052d11a87a82f37e/url HTTP/1.1" 200 14
+2021-06-07 20:02:49,388 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2021-06-07 20:02:49,388 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://127.0.0.1:49878/session/54f142c8955263b6052d11a87a82f37e/element {"using": "css selector", "value": "[id=\"Email\"]"}
+2021-06-07 20:02:49,401 - urllib3.connectionpool - DEBUG - http://127.0.0.1:49878 "POST /session/54f142c8955263b6052d11a87a82f37e/element HTTP/1.1" 200 88
+2021-06-07 20:02:49,401 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2021-06-07 20:02:49,401 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://127.0.0.1:49878/session/54f142c8955263b6052d11a87a82f37e/element/2874779e-03bb-41f4-be00-11ff11b2bee7/clear {"id": "2874779e-03bb-41f4-be00-11ff11b2bee7"}
+2021-06-07 20:02:49,437 - urllib3.connectionpool - DEBUG - http://127.0.0.1:49878 "POST /session/54f142c8955263b6052d11a87a82f37e/element/2874779e-03bb-41f4-be00-11ff11b2bee7/clear HTTP/1.1" 200 14
+2021-06-07 20:02:49,438 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2021-06-07 20:02:49,438 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://127.0.0.1:49878/session/54f142c8955263b6052d11a87a82f37e/element {"using": "css selector", "value": "[id=\"Email\"]"}
+2021-06-07 20:02:49,444 - urllib3.connectionpool - DEBUG - http://127.0.0.1:49878 "POST /session/54f142c8955263b6052d11a87a82f37e/element HTTP/1.1" 200 88
+2021-06-07 20:02:49,444 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2021-06-07 20:02:49,445 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://127.0.0.1:49878/session/54f142c8955263b6052d11a87a82f37e/element/2874779e-03bb-41f4-be00-11ff11b2bee7/value {"text": "admin@yourstore.com", "value": ["a", "d", "m", "i", "n", "@", "y", "o", "u", "r", "s", "t", "o", "r", "e", ".", "c", "o", "m"], "id": "2874779e-03bb-41f4-be00-11ff11b2bee7"}
+2021-06-07 20:02:49,547 - urllib3.connectionpool - DEBUG - http://127.0.0.1:49878 "POST /session/54f142c8955263b6052d11a87a82f37e/element/2874779e-03bb-41f4-be00-11ff11b2bee7/value HTTP/1.1" 200 14
+2021-06-07 20:02:49,548 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2021-06-07 20:02:49,548 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://127.0.0.1:49878/session/54f142c8955263b6052d11a87a82f37e/element {"using": "css selector", "value": "[id=\"Password\"]"}
+2021-06-07 20:02:49,559 - urllib3.connectionpool - DEBUG - http://127.0.0.1:49878 "POST /session/54f142c8955263b6052d11a87a82f37e/element HTTP/1.1" 200 88
+2021-06-07 20:02:49,560 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2021-06-07 20:02:49,560 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://127.0.0.1:49878/session/54f142c8955263b6052d11a87a82f37e/element/eb823c4d-2c2c-45e9-a2b0-ea629085ea5d/clear {"id": "eb823c4d-2c2c-45e9-a2b0-ea629085ea5d"}
+2021-06-07 20:02:49,603 - urllib3.connectionpool - DEBUG - http://127.0.0.1:49878 "POST /session/54f142c8955263b6052d11a87a82f37e/element/eb823c4d-2c2c-45e9-a2b0-ea629085ea5d/clear HTTP/1.1" 200 14
+2021-06-07 20:02:49,604 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2021-06-07 20:02:49,604 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://127.0.0.1:49878/session/54f142c8955263b6052d11a87a82f37e/element {"using": "css selector", "value": "[id=\"Password\"]"}
+2021-06-07 20:02:49,611 - urllib3.connectionpool - DEBUG - http://127.0.0.1:49878 "POST /session/54f142c8955263b6052d11a87a82f37e/element HTTP/1.1" 200 88
+2021-06-07 20:02:49,611 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2021-06-07 20:02:49,611 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://127.0.0.1:49878/session/54f142c8955263b6052d11a87a82f37e/element/eb823c4d-2c2c-45e9-a2b0-ea629085ea5d/value {"text": "admin", "value": ["a", "d", "m", "i", "n"], "id": "eb823c4d-2c2c-45e9-a2b0-ea629085ea5d"}
+2021-06-07 20:02:49,657 - urllib3.connectionpool - DEBUG - http://127.0.0.1:49878 "POST /session/54f142c8955263b6052d11a87a82f37e/element/eb823c4d-2c2c-45e9-a2b0-ea629085ea5d/value HTTP/1.1" 200 14
+2021-06-07 20:02:49,657 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2021-06-07 20:02:49,658 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://127.0.0.1:49878/session/54f142c8955263b6052d11a87a82f37e/element {"using": "xpath", "value": "//button[@type='submit']"}
+2021-06-07 20:02:49,669 - urllib3.connectionpool - DEBUG - http://127.0.0.1:49878 "POST /session/54f142c8955263b6052d11a87a82f37e/element HTTP/1.1" 200 88
+2021-06-07 20:02:49,670 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2021-06-07 20:02:49,670 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://127.0.0.1:49878/session/54f142c8955263b6052d11a87a82f37e/element/cdb30cdb-417e-4968-8010-e6ad5a118f82/click {"id": "cdb30cdb-417e-4968-8010-e6ad5a118f82"}
+2021-06-07 20:03:12,362 - urllib3.connectionpool - DEBUG - http://127.0.0.1:49878 "POST /session/54f142c8955263b6052d11a87a82f37e/element/cdb30cdb-417e-4968-8010-e6ad5a118f82/click HTTP/1.1" 200 14
+2021-06-07 20:03:12,363 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2021-06-07 20:03:12,363 - selenium.webdriver.remote.remote_connection - DEBUG - DELETE http://127.0.0.1:49878/session/54f142c8955263b6052d11a87a82f37e {}
+2021-06-07 20:03:12,416 - urllib3.connectionpool - DEBUG - http://127.0.0.1:49878 "DELETE /session/54f142c8955263b6052d11a87a82f37e HTTP/1.1" 200 14
+2021-06-07 20:03:12,416 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2021-06-07 20:03:12,466 - selenium.webdriver.remote.remote_connection - DEBUG - GET http://127.0.0.1:49878/session/54f142c8955263b6052d11a87a82f37e/title {}
+2021-06-07 20:03:12,467 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2021-06-07 20:03:12,469 - urllib3.util.retry - DEBUG - Incremented Retry for (url='/session/54f142c8955263b6052d11a87a82f37e/title'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2021-06-07 20:03:12,469 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b27c3d0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/54f142c8955263b6052d11a87a82f37e/title
+2021-06-07 20:03:12,470 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (2): 127.0.0.1:49878
+2021-06-07 20:03:12,471 - urllib3.util.retry - DEBUG - Incremented Retry for (url='/session/54f142c8955263b6052d11a87a82f37e/title'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2021-06-07 20:03:12,471 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b3781c0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/54f142c8955263b6052d11a87a82f37e/title
+2021-06-07 20:03:12,472 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (3): 127.0.0.1:49878
+2021-06-07 20:03:12,472 - urllib3.util.retry - DEBUG - Incremented Retry for (url='/session/54f142c8955263b6052d11a87a82f37e/title'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2021-06-07 20:03:12,473 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b3a36d0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/54f142c8955263b6052d11a87a82f37e/title
+2021-06-07 20:03:12,473 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (4): 127.0.0.1:49878
