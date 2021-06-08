@@ -1,0 +1,12 @@
+import logging
+from datetime import datetime
+
+class LogGen:
+
+    @staticmethod
+    def loggen():
+        time = str(datetime.now())
+        logging.basicConfig(filename="Logs/log.log")
+        logger = logging.getLogger()
+        #logger.setLevel(logging.INFO)
+        return logger
