@@ -29,11 +29,30 @@ def IsLeapYear(year):
 
 
 def ChangeStringCase(str):
-    for i in str:
-        print(chr(i))
-        if ascii(i) >=65 and ascii(i) <=95:
-            print(chr(ascii(65+26)))
+    #for i in str:
+        #print(chr(i))
+        # if ascii(i) >=65 and ascii(i) <=95:
+        #     print(chr(ascii(65+26)))
+
+
+
+    arr = [1,2,7,0,7,0,3,4,8,0,7]
+    zero = False
+    seven = False
+    for i in range(len(arr)):
+        for j in range(i+1, len(arr)):
+            if arr[i] == 0 and arr[j] == 0:
+                for m in range(j,len(arr)):
+                    if arr[m] == 7:
+                        print("Found double 0 7")
+                        break
+
+    print("#################################")
+
 
 
 ChangeStringCase('wwW.aFourTecH.Com')
 print(IsLeapYear(1904))
+
+
+
